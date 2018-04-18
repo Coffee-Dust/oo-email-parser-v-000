@@ -9,11 +9,12 @@ class EmailParser
     self.emails = emails
   end
 
-  def parse
+  private
+  def parse_emails
     rtn = emails.split(/[,\s]/)
     rtn.select {|e| e != ""}
   end
-  private
+
   def remove_duplicate
     unique_emails = []
     parse.each { |email| unique_emails << email if !unique_emails.include?(email) }
