@@ -12,7 +12,6 @@ class EmailParser
   def parse
     rtn = emails.split(/[,\s]/)
     rtn.select {|e| e != ""}
-    remove_duplicate
   end
   private
   def remove_duplicate
