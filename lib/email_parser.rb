@@ -12,7 +12,7 @@ class EmailParser
   def parse
     unique_emails = []
     parsed = emails.split(/[,\s]/).reject {|e| e == ""}
-
+    unique_emails = parsed.collect
   end
 
   private
