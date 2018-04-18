@@ -10,7 +10,7 @@ class EmailParser
   end
 
   def parse
-    remove_duplicate
+    parsed = emails.split(/[,\s]/)
   end
 
   private
