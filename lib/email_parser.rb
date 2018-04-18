@@ -10,9 +10,8 @@ class EmailParser
   end
 
   def parse
-    unique_emails = []
     parsed = emails.split(/[,\s]/).reject {|e| e == ""}
-    unique_emails = parsed.collect
+    unique_emails = parsed.collect { |email| email if !unique_emails.inlude?(email)}
   end
 
   private
