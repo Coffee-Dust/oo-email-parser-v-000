@@ -10,7 +10,7 @@ class EmailParser
   end
 
   def parse
-    rtn = self.parsed_emails
+    remove_duplicate
   end
 
   private
