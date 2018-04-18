@@ -9,8 +9,11 @@ class EmailParser
     self.emails = emails
   end
 
+  def parse
+
+  end
+
   private
-  
   def parsed_emails
     rtn = emails.split(/[,\s]/)
     rtn.select {|e| e != ""}
