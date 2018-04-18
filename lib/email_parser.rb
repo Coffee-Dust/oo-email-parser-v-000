@@ -10,7 +10,7 @@ class EmailParser
   end
 
   def parse
-    rtn = parsed_emails
+    rtn = self.parsed_emails
   end
 
   private
